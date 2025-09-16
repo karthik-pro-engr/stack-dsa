@@ -17,3 +17,10 @@
 3. **Min Stack**
    - Maintain auxiliary stack to track minimum
    - Push/pop in sync with main stack
+
+
+4. **Remove All Adjacent Duplicates**
+   - Iterate over characters
+   - If stack top equals current character → pop (remove duplicate)
+   - Else → push character
+   - Rebuild string from stack at the end
