@@ -2,19 +2,14 @@
 
 This repository contains stack-based problems, solutions, and mental tricks for efficient problem-solving.
 
-## Structure
+### Problems
 
-stack/  
-├─ src/main/kotlin/ReverseStringPerformance.kt
+1. **Reverse String** - [reverse-string.md](./problems/reverse-string.md)  
+   Reverse the characters of a string using a stack.
 
-├─ problems/day1-reverse-string.md
+2. **Valid Parentheses** - [valid-parentheses.md](./problems/valid-parentheses.md)  
+   Check if a string containing `()`, `{}`, `[]` is valid using a stack.
 
-├─ cheatsheets/stack-tricks.md
+3. **Min Stack** - [min-stack.md](./problems/min-stack.md)  
+   Design a stack that supports `push`, `pop`, `top`, `getMin`, and optionally `popMin` efficiently.
 
-└─ README.md
-
-
-## Problem 1: Reverse String (16-sep-2025)
-- **Problem:** Reverse a string using a stack
-- **Solution:** `ReverseString.kt`
-- **Tricks:** See `stack-tricks.md` for stack patterns and efficiency tips
