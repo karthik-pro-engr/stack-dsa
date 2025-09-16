@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "prepare": "husky",
+    "test": "echo \"No tests yet\" && exit 0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
+    "husky": "^9.1.7"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  }
+}
