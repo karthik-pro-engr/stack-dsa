@@ -16,7 +16,8 @@ This repository contains stack-based problems, solutions, and mental tricks for 
 3. **Min Stack** - [min-stack.md](problems/basics/min-stack.md)  
    Design a stack that supports `push`, `pop`, `top`, `getMin`, and optionally `popMin` efficiently.
 
-4. **Remove All Adjacent Duplicates** - [remove-all-adjacent-duplicates.md](problems/basics/remove-all-adjacent-duplicates.md)  
+4. **Remove All Adjacent Duplicates
+   ** - [remove-all-adjacent-duplicates.md](problems/basics/remove-all-adjacent-duplicates.md)  
    Given a string, repeatedly remove pairs of adjacent duplicate characters until no more can be removed, using a stack.
 
 </details>
@@ -25,18 +26,23 @@ This repository contains stack-based problems, solutions, and mental tricks for 
 
 <details open> 
 <summary><strong> Patterns </strong></summary>
-
+<details open>
+<summary><strong> Monotonic </strong></summary>
 1. **Next Greater Element** - [next-greater-element.md](problems/patterns/monotonic/next-greater-element.md)  
    For each element in an array, find the next greater element to its right using a monotonic stack.
 
 2. **Next Smaller Element** - [next-smaller-element.md](problems/patterns/monotonic/next-smaller-element.md)  
    For each element in an array, find the next smaller element to its right using a monotonic stack.
 
-3. **Previous Greater Element** - [previous-greater-element.md](problems/patterns/monotonic/previous-greater-element.md)  
+3. **Previous Greater Element
+   ** - [previous-greater-element.md](problems/patterns/monotonic/previous-greater-element.md)  
    For each element in an array, find the previous greater element to its left using a monotonic stack.
 
-4. **Previous Smaller Element** - [previous-smaller-element.md](problems/patterns/monotonic/previous-smaller-element.md)  
+4. **Previous Smaller Element
+   ** - [previous-smaller-element.md](problems/patterns/monotonic/previous-smaller-element.md)  
    For each element in an array, find the previous smaller element to its left using a monotonic stack.
+
+</details>
 </details>
    
 
