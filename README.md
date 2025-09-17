@@ -44,5 +44,13 @@ This repository contains stack-based problems, solutions, and mental tricks for 
 
 </details>
 </details>
+
+
+## 🛠️ How to Use
+
+Clone the repo and explore each markdown file for problem statements, explanations, and code walkthroughs.
+
+```bash
+git clone https://github.com/your-username/stack-dsa-repo.git
    
 
