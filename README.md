@@ -28,17 +28,18 @@ This repository contains stack-based problems, solutions, and mental tricks for 
 <summary><strong> Patterns </strong></summary>
 <details open>
 <summary><strong> Monotonic </strong></summary>
+
 1. **Next Greater Element** - [next-greater-element.md](problems/patterns/monotonic/next-greater-element.md)  
    For each element in an array, find the next greater element to its right using a monotonic stack.
 
 2. **Next Smaller Element** - [next-smaller-element.md](problems/patterns/monotonic/next-smaller-element.md)  
    For each element in an array, find the next smaller element to its right using a monotonic stack.
 
-3. **Previous Greater Element
+3. **Previous Greater Element**
    ** - [previous-greater-element.md](problems/patterns/monotonic/previous-greater-element.md)  
    For each element in an array, find the previous greater element to its left using a monotonic stack.
 
-4. **Previous Smaller Element
+4. **Previous Smaller Element**
    ** - [previous-smaller-element.md](problems/patterns/monotonic/previous-smaller-element.md)  
    For each element in an array, find the previous smaller element to its left using a monotonic stack.
 
