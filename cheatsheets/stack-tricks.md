@@ -2,7 +2,7 @@
 
 ## Common Stack Patterns
 
-<details>
+<details open>
 <summary> <strong>Basics</strong> </summary>
 
 1. **Reverse a String**
@@ -30,7 +30,9 @@
 
 </details>
 
-<details>
+---
+
+<details open>
 <summary> <strong>Patterns</strong> </summary>
 <details>
 <summary><strong>Monotonic</strong></summary>

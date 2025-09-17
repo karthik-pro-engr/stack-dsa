@@ -4,7 +4,7 @@ This repository contains stack-based problems, solutions, and mental tricks for 
 
 ### Problems by Category
 
-<details> 
+<details open> 
 <summary><strong> Basics </strong></summary>
 
 1. **Reverse String** - [reverse-string.md](problems/basics/reverse-string.md)  
@@ -23,7 +23,7 @@ This repository contains stack-based problems, solutions, and mental tricks for 
 
 ---
 
-<details> 
+<details open> 
 <summary><strong> Patterns </strong></summary>
 
 1. **Next Greater Element** - [next-greater-element.md](problems/patterns/monotonic/next-greater-element.md)  
