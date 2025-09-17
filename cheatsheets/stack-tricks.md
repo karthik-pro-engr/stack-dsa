@@ -34,7 +34,7 @@
 
 <details open>
 <summary> <strong>Patterns</strong> </summary>
-<details>
+<details open>
 <summary><strong>Monotonic</strong></summary>
 
 1. **Next Greater Element (NGE)**  
@@ -43,7 +43,32 @@
    - While stack top ≤ current element → pop
    - If stack not empty → top is the next greater
    - Else → answer is `-1`  
+---
+
+2. **Next Smaller Element (NSE)**
+   - Traverse array from right to left
+   - Maintain **monotonic increasing stack**
+   - While stack top ≥ current element → pop
+   - If stack not empty → top is the next smaller
+   - Else → answer is `-1`
+
+---
+
+3. **Previous Greater Element (PGE)**
+   - Traverse array from left to right
+   - Maintain **monotonic decreasing stack**
+   - While stack top ≤ current element → pop
+   - If stack not empty → top is the previous greater
+   - Else → answer is `-1`
+
+---
+
+4. **Previous Smaller Element (PSE)**
+   - Traverse array from left to right
+   - Maintain **monotonic increasing stack**
+   - While stack top ≥ current element → pop
+   - If stack not empty → top is the previous smaller
+   - Else → answer is `-1`
 
 </details>
-
 </details>

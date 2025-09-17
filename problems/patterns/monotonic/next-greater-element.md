@@ -2,7 +2,8 @@
 
 ## Problem statement
 
-Given a string s, remove all adjacent duplicates repeatedly until no duplicates remain.
+Given an array `input`, for each element find the **nearest greater element on the right**.  
+If there is no greater element on the right, return `-1`.
 
 ### Example
 
@@ -40,7 +41,7 @@ When I look at a number, I ask:
 
 - If the stack top is **bigger**, then **he is my answer**.
 
-After checking, I put myself into the stack, because I might be useful for someone on my left.
+After checking, I put myself into the stack, because I might be useful for someone that comes before me (to my left).
 
 
 ### Time Complexity
