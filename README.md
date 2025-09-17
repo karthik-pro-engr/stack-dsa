@@ -16,8 +16,7 @@ This repository contains stack-based problems, solutions, and mental tricks for 
 3. **Min Stack** - [min-stack.md](problems/basics/min-stack.md)  
    Design a stack that supports `push`, `pop`, `top`, `getMin`, and optionally `popMin` efficiently.
 
-4. **Remove All Adjacent Duplicates
-   ** - [remove-all-adjacent-duplicates.md](problems/basics/remove-all-adjacent-duplicates.md)  
+4. **Remove All Adjacent Duplicates** - [remove-all-adjacent-duplicates.md](problems/basics/remove-all-adjacent-duplicates.md)  
    Given a string, repeatedly remove pairs of adjacent duplicate characters until no more can be removed, using a stack.
 
 </details>
