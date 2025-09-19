@@ -30,6 +30,9 @@ So answer is:
 
 
 ## Notes / Hints
+
+### Right To Left Approach
+
 Think of stack like a pocket where you keep “future candidates” that might answer someone’s question.
 
 👉 Rule:
@@ -40,12 +43,34 @@ When I look at a number, I ask:
 - If the stack top is **smaller or equal**, he’s useless → throw him out of pocket.
 
 - If the stack top is **bigger**, then **he is my answer**.
-
+Yeah
 After checking, I put myself into the stack, because I might be useful for someone that comes before me (to my left).
 
+### Left To Right Approach
+
+Rule: 
+When  I look at a number, I ask:
+
+- Look at each number as it comes in from left to right.
+
+- Keep a stack of elements waiting for their next greater number.
+
+- When a new number arrives:
+
+    - While the stack top is smaller than the current number, it has found its next greater → resolve it and remove from stack.
+  
+    - If the stack top is greater or equal, leave it in the stack (it’s still waiting).
+
+- After handling the current number, push it onto the stack — it might be the next greater for numbers coming after it.
+
+- At the end, any numbers left in the stack have no next greater element → -1.
 
 ### Time Complexity
 - Each element is pushed once and popped at most once → **O(n)**
 
 ### Space Complexity
 - Stack + result array → **O(n)** 
+
+## Solutions
+
+- [Right To Left and Right To Left NGE](../../../src/main/kotlin/monotonic/NextGreaterElement.kt)
