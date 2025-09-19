@@ -32,9 +32,10 @@ So answer is:
 
 
 ## Notes / Hints
+### Left To Right
 Think of the stack like a memory of past candidates — only the strongest survivors from the left are kept, since weaker ones can’t help anyone anymore
 
-👉 Rule:
+#### 👉 Rule:
 When I look at a number, I ask:
 
 - “Who is standing on my left that can help me?”
@@ -44,6 +45,16 @@ When I look at a number, I ask:
 - If the stack top is **bigger**, then **he is my answer**.
 
 After checking, I put myself into the stack, because I might be useful for someone on my right.
+
+### Right To Left
+ #### 👉 Rule:
+When I look at a number, I ask:
+
+- “Who is standing on my right that can help me?”
+
+- If the current element is **greater** than the number on top of the stack, it means the top of the stack has found its previous greater element — so I update the output at that index with the current value and remove it from the stack, because it won’t help anyone else.
+
+After checking, I put myself into the stack, because I might be useful for someone on my left (who will come later in the right-to-left scan).
 
 
 ### Time Complexity

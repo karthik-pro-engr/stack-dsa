@@ -65,11 +65,20 @@
 ---
 
 3. **Previous Greater Element (PGE)** - [previous-greater-element.md](../problems/patterns/monotonic/previous-greater-element.md)
+   
+   🔹 **Left to Right Approach (Decreasing Stack)**
    - Traverse array from left to right
    - Maintain **monotonic decreasing stack**
    - While stack top ≤ current element → pop
    - If stack not empty → top is the previous greater
    - Else → answer is `-1`
+
+   🔹 **Right to Left Approach** 
+   - Traverse array from right to left
+   - maintain a **monotonic decreasing stack**
+   - while stack top < current element -> update output with current element in popping index and pop 
+   - push current index onto stack
+   - any remaining indices in stack -> answer is `-1`
 
 ---
 
