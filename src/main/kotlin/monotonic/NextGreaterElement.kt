@@ -1,6 +1,6 @@
 package monotonic
 
-fun nextGreaterElement(input: IntArray): IntArray {
+fun nextGreaterElementRightToLeft(input: IntArray): IntArray {
     val output = IntArray(input.size) { -1 }
     val size = input.size - 1
     val stack = mutableListOf<Int>()
@@ -19,6 +19,21 @@ fun nextGreaterElement(input: IntArray): IntArray {
     return output
 }
 
+fun nextGreaterElementLeftToRight(input: IntArray): IntArray {
+    val size = input.size
+    val output = IntArray(size) { -1 }
+    val stack = mutableListOf<Int>()
+    for (i in 0 until size) {
+        while (stack.isNotEmpty() && input[stack.last()] < input[i]) {
+            output[stack.last()] = input[i]
+            stack.removeAt(stack.lastIndex)
+        }
+        stack.add(i)
+    }
+    return output
+}
+
 fun main() {
-    println(nextGreaterElement(intArrayOf(2, 1, 5, 3, 6)).joinToString(","))
+    println(nextGreaterElementRightToLeft(intArrayOf(2, 1, 5, 3, 6)).joinToString(","))
+    println(nextGreaterElementLeftToRight(intArrayOf(2, 1, 5, 3, 6)).joinToString(","))
 }
