@@ -5,24 +5,24 @@
 <details open>
 <summary> <strong>Basics</strong> </summary>
 
-1. **Reverse a String**
+1. **Reverse a String** - [reverse-string.md](../problems/basics/reverse-string.md)
     - Push all characters onto a stack
     - Pop all characters to build the reversed string
     - Use `StringBuilder` or `CharArray` for efficiency
 
 
-2. **Valid Parentheses**
+2. **Valid Parentheses** - [valid-parentheses.md](../problems/basics/valid-parentheses.md)
     - Push opening brackets
     - Pop and match closing brackets
     - Stack empty at the end → valid
 
 
-3. **Min Stack**
-    - Maintain auxiliary stack to track minimum
+3. **Min Stack** - [min-stack.md](../problems/basics/min-stack.md)
+     - Maintain auxiliary stack to track minimum
     - Push/pop in sync with main stack
 
 
-4. **Remove All Adjacent Duplicates**
+4. **Remove All Adjacent Duplicates** - [remove-all-adjacent-duplicates.md](../problems/basics/remove-all-adjacent-duplicates.md)
     - Iterate over characters
     - If stack top equals current character → pop (remove duplicate)
     - Else → push character
@@ -37,7 +37,7 @@
 <details open>
 <summary><strong>Monotonic</strong></summary>
 
-1. **Next Greater Element (NGE)**
+1. **Next Greater Element (NGE)** - [next-greater-element.md](../problems/patterns/monotonic/next-greater-element.md)
 
    🔹 **Right to Left Approach (Decreasing Stack)**  
    - Traverse array from **right to left**
@@ -55,7 +55,7 @@
    - Any remaining indices in stack → `-1`
 ---
 
-2. **Next Smaller Element (NSE)**
+2. **Next Smaller Element (NSE)** - [next-smaller-element.md](../problems/patterns/monotonic/next-smaller-element.md)
    - Traverse array from right to left
    - Maintain **monotonic increasing stack**
    - While stack top ≥ current element → pop
@@ -64,7 +64,7 @@
 
 ---
 
-3. **Previous Greater Element (PGE)**
+3. **Previous Greater Element (PGE)** - [previous-greater-element.md](../problems/patterns/monotonic/previous-greater-element.md)
    - Traverse array from left to right
    - Maintain **monotonic decreasing stack**
    - While stack top ≤ current element → pop
@@ -73,7 +73,7 @@
 
 ---
 
-4. **Previous Smaller Element (PSE)**
+4. **Previous Smaller Element (PSE)** - [previous-smaller-element.md](../problems/patterns/monotonic/previous-smaller-element.md)
    - Traverse array from left to right
    - Maintain **monotonic increasing stack**
    - While stack top ≥ current element → pop
@@ -81,7 +81,7 @@
    - Else → answer is `-1`
 ---
 
-5. **Circular Next Greater Element (Circular NGE)**
+5. **Circular Next Greater Element (Circular NGE)** - [circular-greater-element.md](../problems/patterns/monotonic/circular-next-greater-element.md)
 
    - 🔹 **Right to Left Approach (2n Traversal)**
      - Traverse array **from 2n-1 down to 0** (simulate circular)

@@ -2,6 +2,9 @@
 
 This repository contains stack-based problems, solutions, and mental tricks for efficient problem-solving.
 
+## Stack Tricks and Mental Patterns -[stack-tricks.md](cheatsheets/stack-tricks.md)
+   
+
 ### Problems by Category
 
 <details open> 
