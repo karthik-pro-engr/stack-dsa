@@ -1,6 +1,16 @@
 package monotonic
 
-fun previousSmallerElement(input: IntArray): IntArray {
+/***
+ * Previous Smaller Element (PSE)
+ *
+ * Problem statement and explanation:
+ * [previous-smaller-element.md](../../../../problems/patterns/monotonic/previous-smaller-element.md)
+ *
+ * Related Stack tricks and notes
+ * [stack-tricks.md](../../../../cheatsheets/stack-tricks.md)
+ *
+ */
+fun previousSmallerElementLeftToRight(input: IntArray): IntArray {
     val size = input.size
     val output = IntArray(size) { -1 }
     val stack = mutableListOf<Int>()
@@ -21,6 +31,25 @@ fun previousSmallerElement(input: IntArray): IntArray {
     return output
 }
 
+fun previousSmallerElementRightToLeft(input: IntArray): IntArray {
+    val size = input.size
+    val output = IntArray(size) { -1 }
+    val stack = mutableListOf<Int>()
+
+    for (i in size - 1 downTo 0) {
+        val current = input[i]
+        while (stack.isNotEmpty() && input[stack.last()] > current) {
+            output[stack.last()] = current
+            stack.removeAt(stack.lastIndex)
+        }
+
+        stack.add(i)
+    }
+
+    return output
+}
+
 fun main() {
-    println(previousSmallerElement(intArrayOf(2, 1, 5, 3, 3, 3,6)).joinToString(","))
+    println(previousSmallerElementLeftToRight(intArrayOf(2, 1, 5, 3, 3, 3, 6)).joinToString(","))
+    println(previousSmallerElementRightToLeft(intArrayOf(2, 1, 5, 3, 3, 3, 6)).joinToString(","))
 }

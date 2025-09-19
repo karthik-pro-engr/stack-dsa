@@ -57,7 +57,7 @@
 
 2. **Next Smaller Element (NSE)** - [next-smaller-element.md](../problems/patterns/monotonic/next-smaller-element.md)
    
-   🔹 **Right to Left Approach (Decreasing Stack)**
+   🔹 **Right to Left Approach (Increasing Stack)**
     - Traverse array from right to left
     - Maintain **monotonic increasing stack**
     - While stack top ≥ current element → pop
@@ -93,11 +93,21 @@
 ---
 
 4. **Previous Smaller Element (PSE)** - [previous-smaller-element.md](../problems/patterns/monotonic/previous-smaller-element.md)
-   - Traverse array from left to right
+   
+   🔹 **Left to Right Approach (Increasing Stack)**
+   - Traverse array from Left to right
    - Maintain **monotonic increasing stack**
    - While stack top ≥ current element → pop
    - If stack not empty → top is the previous smaller
    - Else → answer is `-1`
+  
+   🔹 **Right to Left Approach (Increasing Stack)**
+   - Traverse array from Right to left
+   - Maintain **monotonic increasing stack**
+   - While stack top > current element → pop
+   - For each popped index -> assign current element as its Previous Smaller
+   - Push current index into stack
+   - After traversal, remaining indices in stack -> Previous smaller is `-1`
 ---
 
 5. **Circular Next Greater Element (Circular NGE)** - [circular-greater-element.md](../problems/patterns/monotonic/circular-next-greater-element.md)
