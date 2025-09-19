@@ -40,6 +40,8 @@ This repository contains stack-based problems, solutions, and mental tricks for 
 4. **Previous Smaller Element** - [previous-smaller-element.md](problems/patterns/monotonic/previous-smaller-element.md)  
    For each element in an array, find the previous smaller element to its left using a monotonic stack.
 
+5. **Circular Next Greater Element** - [circular-greater-element.md](problems/patterns/monotonic/circular-next-greater-element.md)
+
 </details>
 </details>
 
