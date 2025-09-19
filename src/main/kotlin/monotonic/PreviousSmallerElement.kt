@@ -4,10 +4,10 @@ package monotonic
  * Previous Smaller Element (PSE)
  *
  * Problem statement and explanation:
- * [previous-smaller-element.md](../../../../problems/patterns/monotonic/previous-smaller-element.md)
+ * [previous-smaller-element.md](https://github.com/karthik-pro-engr/stack-dsa/blob/main/problems/patterns/monotonic/previous-smaller-element.md)
  *
  * Related Stack tricks and notes
- * [stack-tricks.md](../../../../cheatsheets/stack-tricks.md)
+ * [stack-tricks.md](https://github.com/karthik-pro-engr/stack-dsa/blob/main/cheatsheets/stack-tricks.md)
  *
  */
 fun previousSmallerElementLeftToRight(input: IntArray): IntArray {
@@ -50,6 +50,6 @@ fun previousSmallerElementRightToLeft(input: IntArray): IntArray {
 }
 
 fun main() {
-    println(previousSmallerElementLeftToRight(intArrayOf(2, 1, 5, 3, 3, 3, 6)).joinToString(","))
-    println(previousSmallerElementRightToLeft(intArrayOf(2, 1, 5, 3, 3, 3, 6)).joinToString(","))
+    println("Left To Right ${previousSmallerElementLeftToRight(intArrayOf(2, 1, 5, 3, 3, 3, 6)).joinToString(",")}")
+    println("Right To Left ${previousSmallerElementRightToLeft(intArrayOf(2, 1, 5, 3, 3, 3, 6)).joinToString(",")}")
 }
