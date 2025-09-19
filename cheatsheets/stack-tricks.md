@@ -56,11 +56,21 @@
 ---
 
 2. **Next Smaller Element (NSE)** - [next-smaller-element.md](../problems/patterns/monotonic/next-smaller-element.md)
-   - Traverse array from right to left
+   
+   🔹 **Right to Left Approach (Decreasing Stack)**
+    - Traverse array from right to left
+    - Maintain **monotonic increasing stack**
+    - While stack top ≥ current element → pop
+    - If stack not empty → top is the next smaller
+    - Else → answer is `-1`
+
+   🔹 **Left to Right Approach (Pop Greater Elements)** 
+   - Traverse array from left to right
    - Maintain **monotonic increasing stack**
-   - While stack top ≥ current element → pop
-   - If stack not empty → top is the next smaller
-   - Else → answer is `-1`
+   - While stack top > current element-> pop
+   - For each popped index -> assign current element as its Next Smaller
+   - Push current index into stack
+   - After traversal, remaining indices in stack -> Next smaller is `-1`
 
 ---
 
