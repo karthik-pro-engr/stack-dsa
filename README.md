@@ -31,23 +31,36 @@ This repository contains stack-based problems, solutions, and mental tricks for 
 <details open>
 <summary><strong> Monotonic </strong></summary>
 
-1. **Next Greater Element** - [next-greater-element.md](problems/patterns/monotonic/next-greater-element.md)  
+1. **Next Greater Element** - [next-greater-element.md](problems/patterns/monotonic/drills/next-greater-element.md)  
    For each element in an array, find the next greater element to its right using a monotonic stack.
 
-2. **Next Smaller Element** - [next-smaller-element.md](problems/patterns/monotonic/next-smaller-element.md)  
+2. **Next Smaller Element** - [next-smaller-element.md](problems/patterns/monotonic/drills/next-smaller-element.md)  
    For each element in an array, find the next smaller element to its right using a monotonic stack.
 
-3. **Previous Greater Element** - [previous-greater-element.md](problems/patterns/monotonic/previous-greater-element.md)  
+3. **Previous Greater Element** - [previous-greater-element.md](problems/patterns/monotonic/drills/previous-greater-element.md)  
    For each element in an array, find the previous greater element to its left using a monotonic stack.
 
-4. **Previous Smaller Element** - [previous-smaller-element.md](problems/patterns/monotonic/previous-smaller-element.md)  
+4. **Previous Smaller Element** - [previous-smaller-element.md](problems/patterns/monotonic/drills/previous-smaller-element.md)  
    For each element in an array, find the previous smaller element to its left using a monotonic stack.
 
-5. **Circular Next Greater Element** - [circular-greater-element.md](problems/patterns/monotonic/circular-next-greater-element.md)
+5. **Circular Next Greater Element** - [circular-greater-element.md](problems/patterns/monotonic/drills/circular-next-greater-element.md)
 
 </details>
 </details>
 
+---
+
+<details open> 
+<summary><strong> LeetCode </strong></summary>
+<details open>
+<summary><strong> Monotonic </strong></summary>
+
+1. **496 - Next Greater Element - I** - [_496_next-greater-element-i.md](problems/patterns/monotonic/leetcode/_496_next-greater-element-i.md)  
+   Given two arrays, find the next greater element for each number in the first array using a monotonic stack and map.
+
+
+</details>
+</details>
 
 ## 🛠️ How to Use
 
