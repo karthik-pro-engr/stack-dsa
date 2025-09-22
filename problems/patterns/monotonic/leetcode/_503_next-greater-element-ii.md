@@ -1,5 +1,7 @@
 # 22-sep-2025 : 📘 Problem: 503. Next Greater Element II
 
+[LeetCode Problem Link](https://leetcode.com/problems/next-greater-element-ii/)
+
 ## Problem Statement
 
 Given a circular integer array `nums` (i.e., the next element of `nums[nums.length - 1]` is `nums[0]`), return the next greater number for every element in `nums`.

@@ -1,5 +1,8 @@
 # 21-sep-2025 : 📘 Problem: 496. Next Greater Element I
 
+[LeetCode Problem Link](https://leetcode.com/problems/next-greater-element-i/description/)
+
+
 ## Problem Statement
 
 You are given two integer arrays `nums1` and `nums2`, where `nums1` is a subset of `nums2`.
