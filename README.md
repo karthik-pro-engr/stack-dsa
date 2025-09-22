@@ -57,7 +57,8 @@ This repository contains stack-based problems, solutions, and mental tricks for 
 
 1. **496 - Next Greater Element - I** - [_496_next-greater-element-i.md](problems/patterns/monotonic/leetcode/_496_next-greater-element-i.md)  
    Given two arrays, find the next greater element for each number in the first array using a monotonic stack and map.
-
+2. **503 - Next Greater Element II** - [_503_next-greater-ii.md](problems/patterns/monotonic/leetcode/_503_next-greater-element-ii.md)
+   Given a circular integer array, return the next greater number for every element. The next greater number is the first greater element traversing circularly. If it doesn't exist, return -1.
 
 </details>
 </details>
