@@ -1,4 +1,4 @@
-package monotonic
+package monotonic.drills
 
 fun nextSmallerElementRightToLeft(input: IntArray): IntArray {
 

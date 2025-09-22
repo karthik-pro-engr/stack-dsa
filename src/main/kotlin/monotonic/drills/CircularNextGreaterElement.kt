@@ -1,4 +1,4 @@
-package monotonic
+package monotonic.drills
 
 fun circularNextGreaterElement(input: IntArray): IntArray {
     val size = input.size

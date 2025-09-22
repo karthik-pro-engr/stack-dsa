@@ -61,4 +61,9 @@ After checking, I put myself into the stack, because I might be useful for someo
 - Each element is pushed once and popped at most once → **O(n)**
 
 ### Space Complexity
-- Stack + result array → **O(n)** 
+- Stack + result array → **O(n)**
+
+
+## Solutions
+
+- [Right To Left and Right To Left PGE](../../../../src/main/kotlin/monotonic/drills/PreviousGreaterElement.kt)

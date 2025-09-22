@@ -65,4 +65,4 @@ Because an element at the end (like `3` above) might find its answer only if we 
 
 ## Solutions
 
-- [Circular NGE](../../../src/main/kotlin/monotonic/CircularNextGreaterElement.kt)
+- [Circular NGE](../../../../src/main/kotlin/monotonic/drills/CircularNextGreaterElement.kt)

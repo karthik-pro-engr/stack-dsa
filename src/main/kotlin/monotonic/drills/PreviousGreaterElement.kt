@@ -1,4 +1,4 @@
-package monotonic
+package monotonic.drills
 
 fun previousGreaterElementLeftToRight(input: IntArray): IntArray {
     val size = input.size

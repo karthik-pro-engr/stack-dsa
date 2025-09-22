@@ -37,7 +37,7 @@
 <details open>
 <summary><strong>Monotonic</strong></summary>
 
-1. **Next Greater Element (NGE)** - [next-greater-element.md](../problems/patterns/monotonic/next-greater-element.md)
+1. **Next Greater Element (NGE)** - [next-greater-element.md](../problems/patterns/monotonic/drills/next-greater-element.md)
 
    🔹 **Right to Left Approach (Decreasing Stack)**  
    - Traverse array from **right to left**
@@ -55,7 +55,7 @@
    - Any remaining indices in stack → `-1`
 ---
 
-2. **Next Smaller Element (NSE)** - [next-smaller-element.md](../problems/patterns/monotonic/next-smaller-element.md)
+2. **Next Smaller Element (NSE)** - [next-smaller-element.md](../problems/patterns/monotonic/drills/next-smaller-element.md)
    
    🔹 **Right to Left Approach (Increasing Stack)**
     - Traverse array from right to left
@@ -74,7 +74,7 @@
 
 ---
 
-3. **Previous Greater Element (PGE)** - [previous-greater-element.md](../problems/patterns/monotonic/previous-greater-element.md)
+3. **Previous Greater Element (PGE)** - [previous-greater-element.md](../problems/patterns/monotonic/drills/previous-greater-element.md)
    
    🔹 **Left to Right Approach (Decreasing Stack)**
    - Traverse array from left to right
@@ -92,7 +92,7 @@
 
 ---
 
-4. **Previous Smaller Element (PSE)** - [previous-smaller-element.md](../problems/patterns/monotonic/previous-smaller-element.md)
+4. **Previous Smaller Element (PSE)** - [previous-smaller-element.md](../problems/patterns/monotonic/drills/previous-smaller-element.md)
    
    🔹 **Left to Right Approach (Increasing Stack)**
    - Traverse array from Left to right
@@ -110,7 +110,7 @@
    - After traversal, remaining indices in stack -> Previous smaller is `-1`
 ---
 
-5. **Circular Next Greater Element (Circular NGE)** - [circular-greater-element.md](../problems/patterns/monotonic/circular-next-greater-element.md)
+5. **Circular Next Greater Element (Circular NGE)** - [circular-next-greater-element.md](../problems/patterns/monotonic/drills/circular-next-greater-element.md)
 
    - 🔹 **Right to Left Approach (2n Traversal)**
      - Traverse array **from 2n-1 down to 0** (simulate circular)
@@ -131,6 +131,19 @@
      - Remaining indices in stack → `-1`
 
 ---
+
+
+| Variant | Direction | Stack Maintains | Pop Condition     | Update Rule  |
+|---------|-----------|-----------------|-------------------|--------------|
+| **NGE** | LTR       | Decreasing      | while (cur > top) | popped → cur |
+| **NGE** | RTL       | Decreasing      | while (top ≤ cur) | cur → top    |
+| **NSE** | LTR       | Increasing      | while (cur < top) | popped → cur |
+| **NSE** | RTL       | Increasing      | while (top ≥ cur) | cur → top    |
+| **PGE** | LTR       | Decreasing      | while (top ≤ cur) | cur → top    |
+| **PGE** | RTL       | Decreasing      | while (cur > top) | popped → cur |
+| **PSE** | LTR       | Increasing      | while (top ≥ cur) | cur → top    |
+| **PSE** | RTL       | Increasing      | while (cur < top) | popped → cur |
+
 
 </details>
 </details>

@@ -55,4 +55,4 @@ After checking, I put myself into the stack, because I might be useful for someo
 
 ## Solutions
 
-- [Right To Left and Right To Left NSE](../../../src/main/kotlin/monotonic/NextSmallerElement.kt)
+- [Right To Left and Right To Left NSE](../../../../src/main/kotlin/monotonic/drills/NextSmallerElement.kt)

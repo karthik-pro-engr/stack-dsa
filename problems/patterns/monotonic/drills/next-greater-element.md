@@ -73,4 +73,4 @@ When  I look at a number, I ask:
 
 ## Solutions
 
-- [Right To Left and Right To Left NGE](../../../src/main/kotlin/monotonic/NextGreaterElement.kt)
+- [Right To Left and Right To Left NGE](../../../../src/main/kotlin/monotonic/drills/NextGreaterElement.kt)
