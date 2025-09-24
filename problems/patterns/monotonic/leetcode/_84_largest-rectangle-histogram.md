@@ -70,6 +70,38 @@ Then width = `nse[i] - pse[i] - 1`, area = `heights[i] * width`.
 - ✅ Together, they guarantee **valid width calculation at edges** without special if-else handling.  
 calculation for edges.
 
+### Dry Run
+```
+PSE = [-1, -1, 1, 2, 1, 4]
+```
+Example:
+
+- At heights[2]=5, PSE = index 1 (value 1).
+
+- At heights[1]=1, no smaller on left → -1.
+```
+NSE = [1, 6, 4, 4, 6, 6]
+```
+Example:
+
+- At heights[2]=5, NSE = index 4 (value 2).
+
+- At heights[1]=1, NSE = index 6 (sentinel boundary).
+
+```
+width[i] = NSE[i] - PSE[i] - 1
+area[i] = heights[i] * width[i]
+```
+
+```
+i=0: h=2, width=1-(-1)-1=1, area=2
+i=1: h=1, width=6-(-1)-1=6, area=6
+i=2: h=5, width=4-1-1=2, area=10
+i=3: h=6, width=4-2-1=1, area=6
+i=4: h=2, width=6-1-1=4, area=8
+i=5: h=3, width=6-4-1=1, area=3
+
+```
 ---
 
 ### Time Complexity
